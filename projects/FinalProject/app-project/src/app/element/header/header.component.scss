@@ -1,0 +1,30 @@
+header {
+    
+
+.navbar {
+    background-color: #424e64;
+    color: white;
+    margin-bottom: 5%;
+
+    .nav-link {
+        color: white;
+    }
+
+    ul li.active a {
+        color: #b0bad1;
+    }
+    ul li a:hover {
+       color: #99a4b9;
+    }
+
+    .btn-outline {
+        border-color: white;
+        color: white;
+
+       
+    } .btn-outline:hover {
+            background-color: white;
+            color: #424e64
+        }
+}
+}
