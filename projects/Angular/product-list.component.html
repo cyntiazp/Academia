@@ -1,0 +1,27 @@
+<!-- <app-spinner></app-spinner> -->
+
+<div class="container">
+  <form class="form-inline md-form form-sm">
+  <input class="form-control form-control-sm mb-5 mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+  <i class="fas fa-search" aria-hidden="true"></i>
+</form>
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col-md-2">Name</th>
+        <th scope="col-md-2">Date of Birth</th>
+        <th scope="col-md-2">Status</th>
+        <th scope="col-md-2">Member</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="members">
+      <tr *ngFor="let subscriber of members.subscribers">
+        <td>{{subscriber.lastName | uppercase}} {{subscriber.firstName | uppercase}}</td>
+        <td>{{subscriber.dateOfBirth | date:"dd/MM/yyyy"}}</td>
+        <td>{{subscriber.status}}</td>
+        <td>{{subscriber.members}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
